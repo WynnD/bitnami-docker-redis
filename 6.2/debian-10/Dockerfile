@@ -1,5 +1,7 @@
 FROM arm32v7/debian:buster-slim
 
+COPY qemu-arm-static /usr/bin/
+
 ENV HOME="/" \
     OS_FLAVOUR="debian-10" \
     OS_NAME="linux"
